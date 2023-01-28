@@ -108,6 +108,10 @@ main {
   cursor: pointer;
 }
 
+.btn:hover {
+  background: hsl(159, 96%, 10%);
+}
+
 @media only screen and (min-width: 375px) and (max-width: 1440px) {
   .card {
     margin-top: 1rem;
