@@ -27,7 +27,7 @@ Build out this Product preview card component and get it looking as close to the
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Noc662/product-preview-card)
 
 ### Built with
 
