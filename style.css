@@ -1,0 +1,152 @@
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --ff-other: Fraunces;
+  --ff-main: Montserrat, sans-serif;
+  --fw-regular: 400;
+  --fw-meduim: 500;
+  --fw-bold: 700;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-main);
+  font-weight: var(--fw-regular);
+  font-size: 0.875rem;
+  color: var(--Dark-grayish-blue);
+  background-color: var(--Cream);
+  width: 100%;
+}
+main {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  border-radius: 10px;
+  display: flex;
+  max-width: 662px;
+  background-color: var(--White);
+  margin: 0 1rem;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.details {
+  padding: 2rem;
+}
+
+.type {
+  font-weight: var(--fw-meduim);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.name {
+  font-family: var(--ff-other);
+  font-weight: var(--fw-bold);
+  color: var(--Very-dark-blue);
+  padding-right: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.descript {
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.discount {
+  font-family: var(--ff-other);
+  font-weight: var(--fw-bold);
+  font-size: 1.5rem;
+  color: var(--Dark-cyan);
+}
+
+.orginal {
+  text-decoration: line-through;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--Dark-cyan);
+  color: var(--White);
+  font-weight: var(--fw-bold);
+  padding: 1rem 2rem;
+  border-radius: 0.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 1440px) {
+  .card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .img {
+    width: 100%;
+    height: 40%;
+  }
+
+  .img img {
+    content: url("./images/image-product-mobile.jpg");
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .details {
+    width: 100%;
+  }
+
+  .details .name {
+    padding-right: 0;
+  }
+
+  .img img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
